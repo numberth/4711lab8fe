@@ -1,1 +1,2 @@
-# 4711lab8fe
+# starter-standalone
+Starter for lab 8
