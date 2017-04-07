@@ -81,7 +81,7 @@ class Menu extends CI_Model {
 	{
         $this->rest->initialize(array('server' => REST_SERVER));
         $this->rest->option(CURLOPT_PORT, REST_PORT);
-        $retrieved = $this->rest->put('/maintenance/item/id/' . $record['code'], $record);
+        $retrieved = $this->rest->put('/maintenance/item/id/' . $record->id, $record);
 	}
 
 	// Add a record to the DB
@@ -89,6 +89,6 @@ class Menu extends CI_Model {
 	{
         $this->rest->initialize(array('server' => REST_SERVER));
         $this->rest->option(CURLOPT_PORT, REST_PORT);
-        $retrieved = $this->rest->post('/maintenance/item/id/' . $record['code'], $record);
+        $retrieved = $this->rest->post('/maintenance/item/id/' . $record->id, $record);
 	}
 }
